@@ -76,53 +76,32 @@ class BasketBall():
 
 
 
-
-
-dict = {'date': [], 'visitTeam': [], 'homeTeam': [], 'stageName': [], 'visitScore': [], 'homeScore': [],
-            'volume': []}
-
-dfs = pd.DataFrame(dict)
-dfs.to_csv('basket.csv', mode='w', index=False, encoding="euc-kr")
-
-startDate = "2016-10-01"
-dtDate = datetime.datetime.strptime(startDate,"%Y-%m-%d")
-for i in range(0,100) :
-    dtDate = dtDate - relativedelta(months=1)
-    url = "https://www.kbl.or.kr/schedule/today/calendar.asp?tdate=20190709&CalDate="+dtDate.strftime("%Y-%m-%d")
-
-
-    basket = BasketBall()
-
-    basket.getBasketData(url)
-    dfs = pd.concat([dfs, basket.df])
-    print(dtDate.strftime("%Y-%m-%d"))
-    print(dfs)
-
-    dfs.to_csv('C:/Users/Administrator/PycharmProjects/PracticeDesinApi/data/basketData/basketBall.csv', mode='a', header=False, index=False, encoding="euc-kr")
-
-
-
-
-
-#
-# urls = ["https://www.kbl.or.kr/schedule/today/calendar.asp?tdate=20190709&CalDate=2016-10-01&SchSeason=S1","https://www.kbl.or.kr/schedule/today/calendar.asp?tdate=20190709&CalDate=2016-11-01&SchSeason=S1","https://www.kbl.or.kr/schedule/today/calendar.asp?tdate=20190709&CalDate=2016-12-01&SchSeason=S1","https://www.kbl.or.kr/schedule/today/calendar.asp?tdate=20190709&CalDate=2017-01-01&SchSeason=S1","https://www.kbl.or.kr/schedule/today/calendar.asp?tdate=20190709&CalDate=2017-02-01&SchSeason=S1",
-#  "https://www.kbl.or.kr/schedule/today/calendar.asp?tdate=20190709&CalDate=2017-03-01&SchSeason=S1","https://www.kbl.or.kr/schedule/today/calendar.asp?tdate=20190709&CalDate=2018-10-01&SchSeason=S1","https://www.kbl.or.kr/schedule/today/calendar.asp?tdate=20190709&CalDate=2018-11-01&SchSeason=S1","https://www.kbl.or.kr/schedule/today/calendar.asp?tdate=20190709&CalDate=2018-12-01&SchSeason=S1","https://www.kbl.or.kr/schedule/today/calendar.asp?tdate=20190709&CalDate=2019-01-01&SchSeason=S1","https://www.kbl.or.kr/schedule/today/calendar.asp?tdate=20190709&CalDate=2019-02-01&SchSeason=S1",
-#   "https://www.kbl.or.kr/schedule/today/calendar.asp?tdate=20190709&CalDate=2019-03-01&SchSeason=S1"]
 #
 #
-#
-# dict = {'date':[],'visitTeam':[],'homeTeam':[],'stageName':[],'visitScore':[],'homeScore':[], 'volume' : []}
+# dict = {'date': [], 'visitTeam': [], 'homeTeam': [], 'stageName': [], 'visitScore': [], 'homeScore': [],
+#             'volume': []}
 #
 # dfs = pd.DataFrame(dict)
-# dfs.to_csv('basket.csv',mode='w',index=False,encoding="euc-kr")
-# for url in urls :
+# dfs.to_csv('basket.csv', mode='w', index=False, encoding="euc-kr")
+#
+# startDate = "2016-10-01"
+# dtDate = datetime.datetime.strptime(startDate,"%Y-%m-%d")
+# for i in range(0,100) :
+#     dtDate = dtDate - relativedelta(months=1)
+#     url = "https://www.kbl.or.kr/schedule/today/calendar.asp?tdate=20190709&CalDate="+dtDate.strftime("%Y-%m-%d")
+#
 #
 #     basket = BasketBall()
 #
 #     basket.getBasketData(url)
-#     dfs = pd.concat([dfs,basket.df])
-#
+#     dfs = pd.concat([dfs, basket.df])
+#     print(dtDate.strftime("%Y-%m-%d"))
 #     print(dfs)
 #
-#     dfs.to_csv('basket1609.csv',mode='a',header=False, index=False,encoding="euc-kr")
+#     dfs.to_csv('C:/Users/Administrator/PycharmProjects/PracticeDesinApi/data/basketData/basketBall.csv', mode='a', header=False, index=False, encoding="euc-kr")
+
+
+
+
+
 
