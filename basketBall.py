@@ -4,6 +4,7 @@ import pandas as pd
 import re
 import datetime
 from dateutil.relativedelta import relativedelta
+import os
 
 
 class BasketBall():
@@ -11,10 +12,14 @@ class BasketBall():
     def __init__(self):
         self.option = webdriver.ChromeOptions()
         self.option.add_argument('headless')
-        self.browser = webdriver.Chrome("C:/Users/Administrator/PycharmProjects/PracticeDesinApi/chromedriver.exe",options = self.option)
+
+        self.getDriver()
+        self.browser = webdriver.Chrome(self.driverPath,options = self.option)
 
 
-
+    def getDriver(self):
+        path = os.getcwd()
+        self.driverPath = path+"/chromedriver.exe"
 
 
     def getBasketData(self,url):
