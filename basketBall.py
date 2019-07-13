@@ -103,6 +103,7 @@ for i in range(0,100) :
 
 
 
+
 #
 # urls = ["https://www.kbl.or.kr/schedule/today/calendar.asp?tdate=20190709&CalDate=2016-10-01&SchSeason=S1","https://www.kbl.or.kr/schedule/today/calendar.asp?tdate=20190709&CalDate=2016-11-01&SchSeason=S1","https://www.kbl.or.kr/schedule/today/calendar.asp?tdate=20190709&CalDate=2016-12-01&SchSeason=S1","https://www.kbl.or.kr/schedule/today/calendar.asp?tdate=20190709&CalDate=2017-01-01&SchSeason=S1","https://www.kbl.or.kr/schedule/today/calendar.asp?tdate=20190709&CalDate=2017-02-01&SchSeason=S1",
 #  "https://www.kbl.or.kr/schedule/today/calendar.asp?tdate=20190709&CalDate=2017-03-01&SchSeason=S1","https://www.kbl.or.kr/schedule/today/calendar.asp?tdate=20190709&CalDate=2018-10-01&SchSeason=S1","https://www.kbl.or.kr/schedule/today/calendar.asp?tdate=20190709&CalDate=2018-11-01&SchSeason=S1","https://www.kbl.or.kr/schedule/today/calendar.asp?tdate=20190709&CalDate=2018-12-01&SchSeason=S1","https://www.kbl.or.kr/schedule/today/calendar.asp?tdate=20190709&CalDate=2019-01-01&SchSeason=S1","https://www.kbl.or.kr/schedule/today/calendar.asp?tdate=20190709&CalDate=2019-02-01&SchSeason=S1",
