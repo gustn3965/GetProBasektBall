@@ -26,8 +26,11 @@ Lib/selenium/webdriver/common/service.py 에서
                                             close_fds=platform.system() != 'Windows',
                                             stdout=self.log_file,
                                             stderr=self.log_file,
-                                            stdin=PIPE) ```
-를 ```'self.process = subprocess.Popen(cmd, stdin=PIPE, stdout=PIPE, stderr=PIPE, shell=False, creationflags=0x08000000)``` 변경했습니다.
+                                            stdin=PIPE) 
+                                     ```
+를 
+```self.process = subprocess.Popen(cmd, stdin=PIPE, stdout=PIPE, stderr=PIPE, shell=False, creationflags=0x08000000)
+``` 변경했습니다.
 
 
 # 사용방법
