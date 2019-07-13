@@ -1,5 +1,5 @@
 
-#개요
+# 개요
 한국 프로 남자 농구 데이터를 csv로 가져오기. python.
 python 의 selenium으로 가져왔습니다. chromeDriver 사용했습니다. 
 
@@ -30,7 +30,7 @@ self.process = subprocess.Popen(cmd, env=self.env,
 를 self.process = subprocess.Popen(cmd, stdin=PIPE, stdout=PIPE, stderr=PIPE, shell=False, creationflags=0x08000000) 변경했습니다.
 
 
-#사용방법
+# 사용방법
 run.py 에서 startDate를 원하는 날짜로 지정한 후에,
 
 for i in range(0,100) 에서 100을 원하시는 숫자로 바꾸시면 됩니다.
