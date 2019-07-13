@@ -4,11 +4,11 @@ python 의 selenium으로 가져왔습니다. chromeDriver 사용했습니다.
 
 https://www.kbl.or.kr/schedule/today/calendar.asp
 
-![calender](.image/calender.PNG)
+![calender](./image/calender.PNG)
 
 이 사이트에서 날짜별로 경기가 나와있고, 클릭하면 세부정보가 나옵니다.
 
-![detail](.image/detail.PNG)
+![detail](./image/detail.PNG)
 
 
 ![dataColumn](./image/dataColumn.PNG)
