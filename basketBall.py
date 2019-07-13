@@ -39,7 +39,7 @@ class BasketBall():
             print(len(a_s))
             for a in a_s :
                 url_detail.append(a.get_attribute('href'))
-                browser2 = webdriver.Chrome("C:/Users/Administrator/PycharmProjects/PracticeDesinApi/chromedriver.exe",options=self.option)
+                browser2 = webdriver.Chrome(self.driverPath ,options=self.option)
                 browser2.get(a.get_attribute('href'))
 
                 date = browser2.find_element_by_class_name('txt_date').text
