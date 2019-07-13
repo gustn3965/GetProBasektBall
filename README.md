@@ -22,15 +22,19 @@ pythonIDEl로 실행할때도 chrome.prompt 창이 안뜨게 했는데,
 
 Lib/selenium/webdriver/common/service.py 에서
 72번째 줄
+
 ```self.process = subprocess.Popen(cmd, env=self.env,
                                             close_fds=platform.system() != 'Windows',
                                             stdout=self.log_file,
                                             stderr=self.log_file,
                                             stdin=PIPE) 
-                                     ```
+```
 를 
+
 ```self.process = subprocess.Popen(cmd, stdin=PIPE, stdout=PIPE, stderr=PIPE, shell=False, creationflags=0x08000000)
-``` 변경했습니다.
+``` 
+
+변경했습니다.
 
 
 # 사용방법
