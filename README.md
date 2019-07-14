@@ -15,8 +15,10 @@ https://www.kbl.or.kr/schedule/today/calendar.asp
 
 ![dataColumn](./image/dataColumn.PNG)
 
+
 세부정보에서 원하는 정보들만 골라서 다음과 같이 csv파일로 저장하게 됩니다. 
 
+저는 년도-월-일, 원정팀, 홈팀, 경기장명, 관중수, 원정팀점수, 홈팀점수 를 가져왔습니다.
 
 pythonIDEl로 실행할때도 chrome.prompt 창이 안뜨게 했는데, 
 
